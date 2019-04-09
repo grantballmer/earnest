@@ -58,8 +58,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 1s .12s;
-  transition: all 1s .12s;
+  -webkit-transition: all 1s 0.12s;
+  transition: all 1s 0.12s;
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
   opacity: 0;
@@ -76,8 +76,8 @@ a {
 }
 
 .hero__tagline {
-  -webkit-transition: all 1s .12s;
-  transition: all 1s .12s;
+  -webkit-transition: all 1s 0.12s;
+  transition: all 1s 0.12s;
   -webkit-transform: translateX(20%);
           transform: translateX(20%);
   opacity: 0;
@@ -111,8 +111,9 @@ a {
 .hero__link {
   width: 180px;
   height: 40px;
-  color: white;
-  background-color: transparent;
+  background-color: #fdbf68;
+  border: 2px solid #fdbf68;
+  color: #2f2f2f;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,17 +125,29 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 3px;
-  border: 2px solid white;
   font-size: 1.4rem;
   font-weight: 700;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .hero__link:hover {
   background-color: #fdbf68;
   border: 2px solid #fdbf68;
   color: #2f2f2f;
+}
+
+@media (min-width: 812px) {
+  .hero__link {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  .hero__link:hover {
+    background-color: #fdbf68;
+    border: 2px solid #fdbf68;
+    color: #2f2f2f;
+  }
 }
 
 nav {
@@ -405,8 +418,9 @@ nav a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-size: 300;
+  text-align: center;
 }
 
 @media (min-width: 812px) {
@@ -416,6 +430,8 @@ nav a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    font-size: 2.4rem;
+    text-align: left;
   }
 }
 
@@ -502,7 +518,7 @@ nav a {
 
 .beer__image {
   width: 40%;
-  height: 40%;
+  height: 30%;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,6 +534,12 @@ nav a {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+@media (min-width: 550px) {
+  .beer__image {
+    height: 40%;
+  }
 }
 
 @media (min-width: 812px) {
@@ -681,7 +703,13 @@ nav a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 15%;
+  padding: 0 10%;
+}
+
+@media (min-width: 550px) {
+  .about__brewers {
+    padding: 0 15%;
+  }
 }
 
 @media (min-width: 812px) {
@@ -695,7 +723,7 @@ nav a {
 }
 
 .brewer {
-  width: 90%;
+  width: 100%;
   height: 300px;
   position: relative;
   border-radius: 3px;
@@ -773,7 +801,7 @@ nav a {
   height: 100%;
   padding: 10%;
   color: white;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   -webkit-transition: opacity 0.3s;
@@ -783,6 +811,12 @@ nav a {
 
 .brewer__overlay h2 {
   margin-bottom: 8px;
+}
+
+@media (min-width: 812px) {
+  .brewer__overlay {
+    font-size: 2.4rem;
+  }
 }
 
 .contact {

@@ -34,7 +34,11 @@
   width: 100%;
   @include flex(space-between, center);
   flex-direction: column;
-  padding: 0 15%;
+  padding: 0 10%;
+
+  @include wide-mobile {
+    padding: 0 15%;
+  }
 
   @include tablet {
     padding: 0 12%;
@@ -43,7 +47,7 @@
 }
 
 .brewer {
-  width: 90%;
+  width: 100%;
   height: 300px;
   position: relative;
   border-radius: 3px;
@@ -120,7 +124,7 @@
   height: 100%;
   padding: 10%;
   color: white;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: opacity 0.3s;
@@ -129,31 +133,8 @@
   h2 {
     margin-bottom: 8px;
   }
+
+  @include tablet {
+    font-size: 2.4rem;
+  }
 }
-
-// .brewer {
-//   width: 100%;
-//   padding: 0 6%;
-//   @include flex(center, center);
-
-//   &__image {
-//     width: 30%;
-//     @include flex(center, center);
-//   }
-
-//   &__info {
-//     width: 70%;
-//     padding: 0 12%;
-//     @include flex(center, center);
-//     flex-direction: column;
-
-//     h3 {
-//       font-size: 2.8rem;
-//       margin-bottom: 12px;
-//     }
-
-//     p {
-//       font-size: 2.4rem;
-//     }
-//   }
-// }

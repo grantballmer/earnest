@@ -3,11 +3,14 @@
   height: 75vh;
   @include flex(center, center);
   flex-direction: column;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-size: 300;
+  text-align: center;
   @include tablet {
     height: 50vh;
     flex-direction: row;
+    font-size: 2.4rem;
+    text-align: left;
   }
 
   &__child {

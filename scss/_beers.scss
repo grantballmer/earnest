@@ -22,11 +22,15 @@
 
   &__image {
     width: 40%;
-    height: 40%;
+    height: 30%;
     opacity: 0;
     @include flex(center, center);
     transition: all 0.5s;
     order: 1;
+
+    @include wide-mobile {
+      height: 40%;
+    }
 
     @include tablet {
       width: 40%;
