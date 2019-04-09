@@ -1,10 +1,12 @@
 const removeMobileNav = require("./mobileNav");
+const smoothScroll = require("smoothscroll-polyfill");
 
 const navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach(link =>
   link.addEventListener("click", e => {
     e.preventDefault();
+    smoothScroll.polyfill();
     const data = e.target.dataset.link;
     removeMobileNav(); // if user clicks contact link on overlay nav menu, then overlay should be removed
 
