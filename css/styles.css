@@ -1029,5 +1029,8 @@ nav a {
 .contact-form input[type="submit"] {
   background-color: #fdbf68;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 /*# sourceMappingURL=styles.css.map */
