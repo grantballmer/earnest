@@ -106,6 +106,7 @@
   height: 100%;
   @include flex(space-between, center);
   flex-direction: column;
+  appearance: none;
 
   input,
   textarea {
