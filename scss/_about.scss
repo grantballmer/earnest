@@ -1,0 +1,159 @@
+.about__text {
+  width: 100%;
+  padding: 4% 10%;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+
+  @include wide-mobile {
+    padding: 4% 15%;
+  }
+
+  @include tablet {
+    width: 70%;
+    padding: 4% 12%;
+  }
+
+  p {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 4% 0;
+
+    @include tablet {
+      font-size: 2.2rem;
+      text-align: left;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+}
+
+.about__brewers {
+  width: 100%;
+  @include flex(space-between, center);
+  flex-direction: column;
+  padding: 0 15%;
+
+  @include tablet {
+    padding: 0 12%;
+    flex-direction: row;
+  }
+}
+
+.brewer {
+  width: 90%;
+  height: 300px;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 4%;
+  background-position: center;
+
+  @include wide-mobile {
+    width: 300px;
+    height: 300px;
+  }
+
+  @include tablet {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 0;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 40%;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0) 90%
+    );
+  }
+
+  &:hover {
+    .brewer__title,
+    .brewer:after {
+      opacity: 0;
+    }
+    .brewer__overlay {
+      opacity: 1;
+    }
+  }
+
+  &__scot {
+    background-image: url("../assets/images/scot.jpg");
+    background-size: cover;
+  }
+
+  &__keefe {
+    background-image: url("../assets/images/keefe.jpg");
+    background-size: cover;
+  }
+}
+
+.brewer__title {
+  color: white;
+  position: absolute;
+  bottom: 4%;
+  left: 6%;
+  z-index: 1;
+  transition: opacity 0.3s;
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+.brewer__overlay {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  color: white;
+  font-size: 2.4rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+
+  h2 {
+    margin-bottom: 8px;
+  }
+}
+
+// .brewer {
+//   width: 100%;
+//   padding: 0 6%;
+//   @include flex(center, center);
+
+//   &__image {
+//     width: 30%;
+//     @include flex(center, center);
+//   }
+
+//   &__info {
+//     width: 70%;
+//     padding: 0 12%;
+//     @include flex(center, center);
+//     flex-direction: column;
+
+//     h3 {
+//       font-size: 2.8rem;
+//       margin-bottom: 12px;
+//     }
+
+//     p {
+//       font-size: 2.4rem;
+//     }
+//   }
+// }

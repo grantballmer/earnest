@@ -1,0 +1,85 @@
+.hero {
+  width: 100%;
+  // height: calc(100vh - 60px);
+  height: 100vh;
+  background-image: url("../assets/images/background-small.jpg");
+  background-position: top;
+  color: white;
+  @include flex(center,center);
+  flex-direction: column;
+  
+  & > * {
+    margin: 1% 0;
+    
+    @include tablet {
+      // margin: 0;
+    }
+  }
+  
+}
+
+.hero__logo {
+  // height: 15%;
+  // margin-top: 20%;
+  // margin-bottom: 16px;
+  margin-top: 15%;
+  @include flex(center,center);
+  transition: all 1s .12s;
+  transform: translateX(-20%);
+  opacity: 0;
+  
+  img {
+    max-width: 70%;
+    
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+}
+
+.hero__tagline {
+  transition: all 1s .12s;
+  transform: translateX(20%);
+  opacity: 0;
+  margin-bottom: 15px;
+  font-size: 4.5rem;
+  font-weight: 100;
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-align: center;
+    @include tablet {
+      font-size: 4.5rem;
+    }
+    
+    span {
+      font-style: italic;
+    }
+  }
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero__link {
+  width: 180px;
+  height: 40px;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  @include flex(center,center);
+  border-radius: 3px;
+  border: 2px solid white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all .3s linear;
+  
+  &:hover {
+    background-color: $peach;
+    border: 2px solid $peach;
+    color: #2f2f2f;
+  }
+}

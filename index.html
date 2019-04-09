@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Earnest Brew Works</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="nav-logo nav-link home" data-link="home">
+        <img
+          src="./assets/images/brewery2.png"
+          alt="logo"
+          data-link="nav-logo"
+        />
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-link" data-link="beers">Beer</a>
+        <a href="#" class="nav-link" data-link="about">About</a>
+        <a href="#" class="nav-link" data-link="contact">Contact</a>
+      </div>
+      <div class="nav-social">
+        <a href="https://www.facebook.com/earnestbeer/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/earnestbeer/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/earnestbeer" target="_blank">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </div>
+      <div class="nav-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="mobileNav">
+      <div class="nav-menu mobileNav__menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="mobileNav__links">
+        <a href="#" class="nav-link" data-link="home">Home</a>
+        <a href="#" class="nav-link" data-link="beers">Beer</a>
+        <a href="#" class="nav-link" data-link="about">About</a>
+        <a href="#" class="nav-link" data-link="contact">Contact</a>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero__logo">
+        <img src="./assets/images/brewery2.png" alt="earnest logo" />
+      </div>
+      <div class="hero__tagline">
+        <h1>You will <span>brew</span> better in Toledo!</h1>
+      </div>
+      <a href="/earnest/beers" class="hero__link nav-link" data-link="beers"
+        >See Our Beers</a
+      >
+    </section>
+
+    <section class="intro">
+      <div class="intro__child">
+        Earnest Brew Works is a brewery and taproom proudly located in Toledo.
+        We choose to brew great beers for our community’s enjoyment.
+      </div>
+
+      <div class="intro__child hours">
+        <h2>Hours</h2>
+        <p>Wednesday - Thursday: 4pm - 10pm</p>
+        <p>Friday: 4pm - 11pm</p>
+        <p>Saturday: 12pm - 11pm</p>
+      </div>
+    </section>
+
+    <section class="beers">
+      <div class="banner banner-beers">
+        <h1>Our Beer Selection</h1>
+      </div>
+
+      <div class="beer beer-oscar">
+        <div class="beer__image beer__image--left image-left">
+          <img src="./assets/images/bottle.png" alt="mug" />
+        </div>
+
+        <div class="beer__details">
+          <h2 class="beer__details--name">Oscar the Rauchbier</h2>
+
+          <h3 class="beer__details--ingredients">5.6%, 24 SRM 40 IBU</h3>
+
+          <p class="beer__details--desc">
+            The smoke is strong with this beer, German smoked ale brewed with
+            60% cherry smoked malt. To keep it German, we used Munich malt,
+            Hallertau Magnum hops. A pint of Oscar will leave you in a good, not
+            grouchy mood.
+          </p>
+        </div>
+      </div>
+
+      <div class="beer">
+        <div class="beer__details">
+          <h2 class="beer__details--name">Johnny's Apple Ale</h2>
+
+          <h3 class="beer__details--ingredients">6.6%, 5 SRM 11 IBU</h3>
+
+          <p class="beer__details--desc">
+            Comes off as a pleasant tasting cider, but it is actually a
+            juice/grain hybrid, featuring Michigan McIntosh apples and American
+            pale malt.
+          </p>
+        </div>
+
+        <div class="beer__image beer__image--right image-right">
+          <img src="./assets/images/mug2.png" alt="mug" />
+        </div>
+      </div>
+
+      <div class="beer">
+        <div class="beer__image beer__image--left image-left">
+          <img src="./assets/images/mug3.png" alt="mug" />
+        </div>
+
+        <div class="beer__details">
+          <h2 class="beer__details--name">Easy</h2>
+
+          <h3 class="beer__details--ingredients">
+            Golden Ale - 7.2%, 6 SRM 26 IBU
+          </h3>
+
+          <p class="beer__details--desc">
+            Your palate will not be challenged with this beer. The hops are
+            light and smooth. Easy to drink, easy to enjoy.
+          </p>
+        </div>
+      </div>
+
+      <div class="beer">
+        <div class="beer__details">
+          <h2 class="beer__details--name">Blueberry Queen</h2>
+
+          <h3 class="beer__details--ingredients">
+            Grape/grain hybrid beer - 10%, 5 (blue) SRM 18 IBU
+          </h3>
+
+          <p class="beer__details--desc">
+            Blending grape juice and malt is one of Earnest's most creative
+            styles. The beer comes off as not a beer and not a wine, it is
+            satisfying. Sauvignon Blanc grape guice and German Pilsen malt were
+            fermented as the base for this beer. Blueberry puree was added and
+            the result is fit for a queen.
+          </p>
+        </div>
+
+        <div class="beer__image beer__image--right image-right">
+          <img src="./assets/images/blueberry.png" alt="mug" />
+        </div>
+      </div>
+
+      <div class="beer">
+        <div class="beer__image beer__image--left image-left">
+          <img src="./assets/images/bottle3.png" alt="mug" />
+        </div>
+
+        <div class="beer__details">
+          <h2 class="beer__details--name">Big Oatis</h2>
+
+          <h3 class="beer__details--ingredients">
+            Double Oatmeal Stout - 7.3%, 40 SRM 50 IBU
+          </h3>
+
+          <p class="beer__details--desc">
+            Your palate will not be challenged with this beer. The hops are
+            light and smooth. Easy to drink, easy to enjoy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="banner banner-about">
+        <h1>About Us</h1>
+      </div>
+
+      <div class="about__text">
+        <p>
+          Earnest Brew Works is a brewer-owned and operated brewery and taproom
+          coming to Toledo, Ohio in 2016. Earnest Brew Works is the vision of
+          two homebrewers who want to share their passion for beer. Inspiration
+          can come from anywhere, and the beers brewed at the EBW will be no
+          different - we will both pay homage to traditional beer styles while
+          also bringing in a fresh take on ingredients.
+        </p>
+        <p>
+          The word earnest means “serious in intention, purpose, showing depth
+          and sincerity.” This captures the brewers’ attitudes towards beer and
+          brewing. Earnest Brew Works chooses to brew great beers for our
+          community’s enjoyment.
+        </p>
+
+        <p>
+          Please check our
+          <a href="https://www.facebook.com/earnestbeer/" target="_blank"
+            >Facebook</a
+          >
+          page for updates on our progress!
+        </p>
+      </div>
+
+      <div class="about__brewers">
+        <div class="brewer brewer__scot">
+          <div class="brewer__title">
+            <h2>Scot</h2>
+            <p>Co-Owner</p>
+          </div>
+          <div class="brewer__overlay">
+            <h2>Scot</h2>
+            <p>
+              I have been a homebrewer for 20 years and like most homebrewers, I
+              would often think about opening a brewery. 20 years has been long
+              enough, it is time for me to jump in feet first and open my
+              brewery.
+            </p>
+          </div>
+        </div>
+        <div class="brewer brewer__keefe">
+          <div class="brewer__title">
+            <h2>Keefe</h2>
+            <p>Co-Owner</p>
+          </div>
+          <div class="brewer__overlay">
+            <h2>Keefe</h2>
+            <p>
+              I knew I was hooked for life after I brewed my first batch.
+              Brewing to me is a perfect blend of technical merit and artist
+              expression. It satiates my desire to produce something that others
+              enjoy, and it is so rewarding when it is appreciated.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__container--text">
+          <div class="text-area">
+            <h2>Contact Us</h2>
+            <div class="links">
+              <a href="tel:1-562-867-5309" class="links__child">
+                <i class="fas fa-phone"></i>
+                419-340-2589
+              </a>
+
+              <a
+                href="https://www.facebook.com/earnestbeer/"
+                target="_blank"
+                class="links__child"
+              >
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+              </a>
+
+              <div class="links__child">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>4342 S Detroit Ave, Toledo, OH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__container--map"></div>
+        <div class="contact__container--form">
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" name="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/bundle.js"></script>
+  </body>
+</html>
